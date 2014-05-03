@@ -16,5 +16,15 @@
   },
   "browserify": {
     "transform": ["browserify-shim"]
+  },
+  "browser": {
+    "jquery": "./bower_components/jquery/dist/jquery.js",
+    "jquery-colorbox": "./bower_components/jquery-colorbox/jquery.colorbox.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "jquery-colorbox": {
+      "depends": ["jquery:$"]
+    }
   }
 }
